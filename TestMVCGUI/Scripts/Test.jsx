@@ -3,7 +3,7 @@
     render: function () {
         return (
           React.createElement('div', { className: "commentBox" },
-            "Testing button"
+            "Testing button: React.createElement('div', {className: commentBox },"
           )
         );
     }
