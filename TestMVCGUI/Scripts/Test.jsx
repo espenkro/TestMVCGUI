@@ -3,11 +3,15 @@
     render: function () {
         return (
           React.createElement('div', { className: "commentBox" },
-            "Testing button: React.createElement('div', {className: commentBox },"
+            "Tester button: React.createElement('div', {className: commentBox },"
           )
         );
     }
 });
+
+
+//var React = require('react'); // gir Uncaught ReferenceError: require is not defined
+
 var buttonStyle = {
     margin: '10px 10px 10px 0'
 };
@@ -22,7 +26,7 @@ var Button = React.createClass({
     );
 }
 });
-//module.exports = Button;
+module.exports = Button;
 /*
 const Button = ({ children, color }) => ({
     type: 'button',
@@ -39,7 +43,7 @@ const Button = ({ children, color }) => ({
 */
 
 ReactDOM.render(
-  React.createElement(CommentBox, null),
-  //React.createElement(Button,null),
+  //React.createElement(CommentBox, null),
+  React.createElement(Button,null),
   document.getElementById('content')
 );
